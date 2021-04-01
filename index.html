@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>WebSocket</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>WebSocets</h1>
+      <span class="red" id="status">OFFLINE</span>
+    </header>
+
+    <main>
+      <form id="nick_form">
+        <input
+          required
+          autofocus
+          autocomplete="off"
+          type="text"
+          id="nick_input"
+        />
+        <button type="submit" id="nick_btn">ок</button>
+      </form>
+
+      <ul id="messages"></ul>
+
+      <form class="hidden" id="form">
+        <label for="message">&gt;</label>
+        <input type="text" id="input" required autofocus autocomplete="off" />
+      </form>
+      <button id="inp_file">Фото</button>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
